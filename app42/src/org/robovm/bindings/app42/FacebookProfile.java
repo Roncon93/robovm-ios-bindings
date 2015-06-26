@@ -30,8 +30,8 @@ public class FacebookProfile extends NSObject
 	@Property(selector = "scoreObj")
 	public native Score getScoreObj();
 
-	@Property(selector = "setScoreObj:", strongRef = true)
-	public native void setScore(Score score);
+	//@Property(selector = "setScoreObj:", strongRef = true)
+	//public native void setScore(Score score);
 
 	public FacebookProfile(Score score) {
 		super((SkipInit) null);

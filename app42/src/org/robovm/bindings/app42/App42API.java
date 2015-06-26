@@ -28,7 +28,7 @@ public class App42API extends NSObject
 	public native static void setUserSessionId(String userSessionId);
 	
 	@Method(selector = "initializeWithAPIKey:andSecretKey:")
-	public native static void initializeWithAPIKey(String apiKey, String secretKey);
+	public native static void initialize(String apiKey, String secretKey);
 	
 	@Method(selector = "setFbAccesToken:")
 	public native static void setFbAccesToken(String fbAccesToken);

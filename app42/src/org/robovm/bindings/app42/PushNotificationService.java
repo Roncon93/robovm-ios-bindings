@@ -6,18 +6,16 @@ import org.robovm.apple.foundation.NSDictionary;
 import org.robovm.objc.annotation.Block;
 import org.robovm.objc.annotation.Method;
 import org.robovm.objc.annotation.NativeClass;
-import org.robovm.rt.bro.annotation.ByVal;
-import org.robovm.rt.bro.annotation.GlobalValue;
 import org.robovm.rt.bro.annotation.Pointer;
 
 @NativeClass
 public class PushNotificationService extends App42Service
 {
-	@GlobalValue(symbol = "PRODUCTION", optional=true)
-	public static native @ByVal String PRODUCTION();
+	//@GlobalValue(symbol = "PRODUCTION", optional=true)
+	//public static native @ByVal String PRODUCTION();
 	
-	@GlobalValue(symbol = "DEVELOPMENT", optional=true)
-	public static native @ByVal String DEVELOPMENT();
+	//@GlobalValue(symbol = "DEVELOPMENT", optional=true)
+	//public static native @ByVal String DEVELOPMENT();
 	
 	public PushNotificationService(String apiKey, String secretKey) {
 		super((SkipInit) null);
